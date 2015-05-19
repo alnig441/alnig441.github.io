@@ -68,6 +68,10 @@ p {
 
 }
 
+span {
+	font-family: Heydings;
+}
+
 #header h4 {
 	display: inline;
 	margin: 0px;
@@ -117,15 +121,15 @@ p {
 	height: 25px;
 	border-radius: 0px 0px 20px 20px;
 	background-color: #b9c9d0;
-
 	border-top: 1px solid;
+	opacity: 0.9;
 }
 
 #footer h5 {
 	text-align: center;
 	padding-top: 5px;
 	margin:0%;
-	opacity: 0.9;
+
 }
 
 #tail {
