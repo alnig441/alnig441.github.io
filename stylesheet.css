@@ -6,14 +6,11 @@ body {
 	text-align: justify;
 	width: 1000px;
 	margin: auto;
-/*			*/
 
 }
 
 #header {
 	position: fixed;
-/*	left:auto;
-	right: auto;	*/
 	top: 0%;
 	width: 1000px;	
 	display: inline;
@@ -23,7 +20,7 @@ body {
 	margin: 0px;
 	border-bottom: 1px solid;
 	opacity: 0.9;
-/*	border: 1px solid;	*/
+
 }
 
 #project {
@@ -32,6 +29,13 @@ body {
 	border-radius: 5px;
 	background-color: #b9c9d0;
 	border: 1px solid;
+}
+
+img {
+	height: 11px;
+	width: 11px;
+	padding-right: 5px;
+
 }
 
 h1 {
@@ -67,7 +71,6 @@ p {
 	border-bottom: 1px solid;
 
 }
-
 
 #header h4 {
 	display: inline;
@@ -111,15 +114,13 @@ p {
 
 #footer {
 	position: fixed;
-/*	left:auto;
-	right: auto;	*/
 	bottom:0%;
 	width: 1000px;
 	height: 25px;
 	border-radius: 0px 0px 20px 20px;
 	background-color: #b9c9d0;
-	border-top: 1px solid;
 	opacity: 0.9;
+	border-top: 1px solid;
 }
 
 #footer h5 {
