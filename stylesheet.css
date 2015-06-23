@@ -1,143 +1,95 @@
-* {
-/*	border: 1px solid;	*/
-}
 
 body {
-	text-align: justify;
-	width: 1000px;
+	font-family: "Lucida-Console", monospace;
+}
+
+#frame {
 	margin: auto;
-
-}
-
-#header {
-	position: fixed;
-	top: 0%;
-	width: 1000px;	
-	display: inline;
-	border-radius: 20px 20px 0% 0%;
-	background-color: #b9c9d0;
-	padding: 0px;
-	margin: 0px;
-	border-bottom: 1px solid;
-	opacity: 0.9;
-
-}
-
-#project {
-	height: 30px;
-	margin-top: 5px;
-	border-radius: 5px;
-	background-color: #b9c9d0;
+	margin-top: 25px;
+	height: 850px;
+	width:	750px;
 	border: 1px solid;
-}
-
-img {
-	height: 11px;
-	width: 11px;
-	padding-right: 5px;
-
-}
-
-h1 {
-	width: 100%;
-	margin: 0%;
-	text-align: center;
-}
-
-h2 {
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-h3 {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-style: italic;
-}
-
-ul {
-	margin-top: 0px;
-}
-
-p {
-	display: block;
-	clear: both;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 0%;
-	margin-bottom: 0px;
+	border-radius: 3px;
 	background-color: white;
-	border-top: 1px solid;
+	box-shadow: 10px 10px 5px grey;
+}
+
+#photo {
+	width: 700px;
+	height: 700px;
+	margin: auto;
+	margin-top: 25px;
+	border-radius: 5px;
+	background-image: url('billedmateriale/backdrop_scorched.jpg');
+}
+
+#menu {
+	width: 150px;
+	text-align:left;
+	font-family: "Lucida-Console" , monospace;
+	border-radius: 0px 0px 5px 0px;
+	background: white;
+	border-right: 1px solid;
 	border-bottom: 1px solid;
-
+	display: none;
 }
 
-#header h4 {
-	display: inline;
-	margin: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-#header h4:nth-child(4) {
-	float: right; 
-
-}
-
-#window {
-	margin-top: 200px;
-}
-
-.outer {
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
-.outer p:nth-child(2) {
-	border-top: none;
-}
-.outer p:nth-child(4) {
-	border-bottom: none;
-	padding-bottom: 0px;
-}
-
-#left {
-	float:left;
-
-}
-
-#right {
-	float:right;
-	text-align: right;
-
-}
-
-#footer {
-	position: fixed;
-	bottom:0%;
-	width: 1000px;
-	height: 25px;
-	border-radius: 0px 0px 20px 20px;
-	background-color: #b9c9d0;
-	opacity: 0.9;
-	border-top: 1px solid;
-}
-
-#footer h5 {
+.modal-content p{
 	text-align: center;
-	padding-top: 5px;
-	margin:0%;
-
 }
 
-#tail {
-	margin-bottom: 50px;
+.modal-content img{
+	width: 100%;
+	height: 75%;
+	border-radius: 5px;
 }
 
 a {
 	text-decoration: none;
-	text-transform: none;
 	color: black;
-
 }
 
+h5 {
+	text-align: center;
+	font-family: "Lucida-Console", monospace;
+	font-style: italic;
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	top: 780px;
+	left: 0;
+	right: 0;
+}
+
+ul {
+	color: black;
+	position:inherit;
+	padding-left: 0;
+	padding-right: 0;
+	display: flex;
+	justify-content: space-around; 
+}
+
+li {
+	background-color: #eeeeee;
+	width: 70px;
+	text-align: center;
+	display: inline;
+	margin: 0px 25px;
+	font-family: "Lucida-Console", monospace; 
+	border: 1px solid;
+	border-radius: 3px;
+
+} 
+
+span{
+	position: absolute;
+	top: 810px;
+	width: 20px;
+	height: 12px;
+	margin-left: auto;
+	margin-right:auto; 
+	left:0;
+	right: 0;
+
+}
