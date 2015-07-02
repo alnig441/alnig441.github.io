@@ -38,6 +38,34 @@ header h4:nth-child(4) {
 	float: right; 
 }
 
+article {
+	margin: 0 15px 0 15px;
+}
+
+
+summary {
+	height: 30px;
+	margin-top: 5px;
+	border-radius: 5px;
+	border: 1px solid;
+	background-color: #b9c9d0;
+}
+
+footer {
+	position: fixed;
+	bottom:0%;
+	width: 1000px;
+	height: 25px;
+	border-radius: 0px 0px 20px 20px;
+	border-top: 1px solid;
+	background-color: #b9c9d0;
+	opacity: 0.9;
+}
+
+footer h5 {
+	text-align: center;
+	margin-top: 5px;
+}
 
 img {
 	height: 11px;
@@ -82,22 +110,14 @@ p {
 	background-color: white;
 }
 
+a {
+	text-decoration: none;
+	text-transform: none;
+	color: black;
+}
 
 #window {
 	margin-top: 200px;
-}
-
-article {
-	margin: 0 15px 0 15px;
-}
-
-
-summary {
-	height: 30px;
-	margin-top: 5px;
-	border-radius: 5px;
-	border: 1px solid;
-	background-color: #b9c9d0;
 }
 
 #left {
@@ -109,30 +129,10 @@ summary {
 	text-align: right;
 }
 
-footer {
-	position: fixed;
-	bottom:0%;
-	width: 1000px;
-	height: 25px;
-	border-radius: 0px 0px 20px 20px;
-	border-top: 1px solid;
-	background-color: #b9c9d0;
-	opacity: 0.9;
-}
-
-footer h5 {
-	text-align: center;
-	margin-top: 5px;
-
-}
 
 #tail {
 	margin-bottom: 50px;
 }
 
-a {
-	text-decoration: none;
-	text-transform: none;
-	color: black;
-}
+
 
