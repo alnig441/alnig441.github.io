@@ -1,0 +1,189 @@
+.item {
+  padding: 0px 5px 0px 5px;
+  text-align: left;
+}
+
+body {
+  width: 1000px;
+  margin: auto;
+  font-family: arial;
+}
+
+ul {
+  list-style: circle;
+  width: auto;
+  padding-left: 15px;
+}
+
+h1 {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.print {
+  display: none;
+}
+
+
+.section-header > h2 {
+  margin: 5px 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.flex-container {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#objective {
+  grid-column: 2 ;
+  grid-row: 2 ;
+}
+
+#dev-exp {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#skills {
+  grid-row: 4;
+}
+
+.left, .right {
+  margin: 0 2px 2px 0;
+  padding: none;
+}
+
+i.right {
+  display: none;
+}
+
+.outer-container {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+
+.col1 {
+  grid-column: 1 / span 1;
+}
+
+.col2 {
+  grid-column: 2 / span 2;
+}
+
+.github.menu-item {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .heroku.menu-item {
+    display: none;
+  }
+
+  .github.menu-item {
+    display: inline;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    width: auto;
+    margin: 10px;
+  }
+
+  h1 {
+    position: inherit;
+    text-align: center;
+  }
+
+  .section-header > h2 {
+    margin: 15px 0px 0px 0px;
+  }
+
+  .outer-container {
+    grid-template-columns: 100%;
+  }
+
+  .col2, #objective, #dev-exp {
+    grid-column: 1;
+  }
+
+  .flex-container {
+    display: flex;
+    width: 100%;
+    grid-row: 3;
+  }
+
+  i.right {
+    display: inherit;
+  }
+
+  i.left {
+    display: none;
+  }
+
+  .heroku.menu-item {
+    display: none;
+  }
+
+  .github.menu-item {
+    display: inline;
+  }
+
+  #details {
+    width: 70%;
+  }
+
+  #resources {
+    text-align: right;
+  }
+
+  #objective {
+    grid-row: 2;
+  }
+
+  #dev-exp {
+    grid-row: 4;
+  }
+
+  #skills {
+    grid-row: 6;
+  }
+
+}
+
+@media print {
+  body {
+    width: 700px;
+    font-size: 0.7em;
+  }
+  .print {
+    display: inline;
+  }
+
+  a {
+    display: none;
+  }
+
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+}
