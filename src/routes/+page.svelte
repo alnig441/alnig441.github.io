@@ -1,11 +1,15 @@
 <script>
   import { FloatingMenu } from "svelte-demo-floating-menu";
-  const options = { github: {}, heroku: {}, }
+  import { ChatClient } from "svelte-demo-chat-client";
+  import Icon from '@iconify/svelte';
+
+  const options = { github: {}, heroku: {}, }, endpoint = "http://localhost:3000", auth = "";
 
 </script>
 
 <main id="main">
-  <FloatingMenu options={options} />
+  <span class="noprint"><FloatingMenu options={options} /></span>
+  <span class="noprint"><ChatClient auth={auth} endpoint={endpoint} /></span>
 <!-- grid start -->
   <div class="grid-container outer-container">
 <!-- sidebar begin -->
@@ -14,36 +18,33 @@
       <div class="item col1 sidebar" id="details">
         <h3>Details</h3>
         <p class="left">
-          <i class="fa-solid fa-city"></i>
+          <Icon icon="fa6-solid:tree-city" inline={true}/>
           Charlotte, NC
         </p>
         <p class="left">
-          <a class="detail" href="sms:+12148430032">
-            <i class="fa-solid fa-square-phone"></i>
+          <!-- <a class="detail" href="sms:+12148430032">
             214 843 0032
-          </a>
+          </a> -->
           <span class="print">
-            <i class="fa-solid fa-square-phone"></i>
             214 843 0032
           </span>
         </p>
         <p class="left">
           <a class="detail" href="mailto:alnig441@gmail.com">
-            <i class="fa-solid fa-envelope"></i>
-            alnig441@gmail.com
+            <Icon icon="ci:mail" inline={true}/>
+            <!-- alnig441@gmail.com -->
+            s0t8ug@m.hackerx.org
           </a>
           <span class="print">
-            <i class="fa-solid fa-envelope"></i>
             alnig441@gmail.com
           </span>
         </p>
         <p class="left">
           <a class="detail" href="https://cleland-nielsen.net">
-            <i class="fa-solid fa-earth-americas"></i>
+            <Icon icon="el:website" inline={true} />
             cleland-nielsen.net
           </a>
           <span class="print">
-            <i class="fa-solid fa-earth-americas"></i>
             cleland-nielsen.net
           </span>
         </p>
@@ -51,12 +52,16 @@
       <div class="item col1 sidebar" id="resources">
         <h3>Resources</h3>
         <p class="right" id="linkedin">
-          <a class="resource" href="https://linkedin.com/in/nielsenallan" ><i class="fa-brands fa-linkedin left"></i>LinkedIn<i class="fa-brands fa-linkedin right"></i></a>
-          <span class="print"><i class="fa-brands fa-linkedin"></i>linkedin.com/in/nielsenallan</span>
+          <a class="resource" href="https://linkedin.com/in/nielsenallan" >
+            <Icon icon="logos:linkedin" inline={true} />
+          </a>
+          <span class="print">linkedin.com/in/nielsenallan</span>
         </p>
         <p class="right" id="github">
-          <a class="resource" href="https://github.com/alnig441" ><i class="fa-brands fa-github left"></i>GitHub<i class="fa-brands fa-github right"></i></a>
-          <span class="print"><i class="fa-brands fa-github"></i>github.com/alnig441</span>
+          <a class="resource" href="https://github.com/alnig441" >
+          <Icon icon="octicon:logo-github-16" inline={true} />
+          </a>
+          <span class="print">github.com/alnig441</span>
         </p>
       </div>
     </div>
@@ -66,18 +71,18 @@
       <p>HTML5, CSS3, JavaScript, TypeScript, Node, Express, Bootstrap, Angular, AngularJS, Svelte, SvelteKit, jQuery, React, Mongo, Postgres, mySql, Docker, Craft CMS, PHP, Bitbucket, Git, Heroku, NPM, Homebrew</p>
       <h3>Apps</h3>
       <p class="right" id="scrambler">
-        <a class="github menu-item" href="https://github.com/alnig441/word-guessing-game" ><i class="fa-solid fa-arrow-up-right-from-square"></i>Word Scrambler</a>
-        <a class="heroku menu-item" href="https://allan-nielsen-word-scrambler.herokuapp.com" ><i class="fa-solid fa-arrow-up-right-from-square"></i>Word Scrambler</a>
+        <a class="github menu-item" href="https://github.com/alnig441/word-guessing-game" >Word Scrambler<Icon icon="ci:external-link" inline={true} /></a>
+        <a class="heroku menu-item" href="https://allan-nielsen-word-scrambler.herokuapp.com" >Word Scrambler<Icon icon="ci:external-link" inline={true} /></a>
         <span class="print">https://allan-nielsen-word-scrambler.herokuapp.com</span>
       </p>
       <p class="right" id="profiles">
-        <a class="github menu-item" href="https://github.com/alnig441/student-profiles-react" ><i class="fa-solid fa-arrow-up-right-from-square"></i>Student Profiles</a>
-        <a class="heroku menu-item" href="https://allan-nielsen-student-profiles.herokuapp.com" ><i class="fa-solid fa-arrow-up-right-from-square"></i>Student Profiles</a>
+        <a class="github menu-item" href="https://github.com/alnig441/student-profiles-react" >Student Profiles<Icon icon="ci:external-link" inline={true} /></a>
+        <a class="heroku menu-item" href="https://allan-nielsen-student-profiles.herokuapp.com" >Student Profiles<Icon icon="ci:external-link" inline={true} /></a>
         <span class="print">https://allan-nielsen-student-profiles.herokuapp.com</span>
       </p>
       <p class="right" id="chat">
-        <a class="github menu-item" href="https://github.com/alnig441/svelte-chat-app" ><i class="fa-solid fa-arrow-up-right-from-square"></i>Chat App</a>
-        <a class="heroku menu-item" href="https://allan-nielsen-chat-app.herokuapp.com/" ><i class="fa-solid fa-arrow-up-right-from-square"></i>Chat App</a>
+        <a class="github menu-item" href="https://github.com/alnig441/svelte-chat-app" >Chat App<Icon icon="ci:external-link" inline={true} /></a>
+        <a class="heroku menu-item" href="https://allan-nielsen-chat-app.herokuapp.com/" >Chat App<Icon icon="ci:external-link" inline={true} /></a>
         <span class="print">https://allan-nielsen-chat-app.herokuapp.com/</span>
       </p>
     </div>

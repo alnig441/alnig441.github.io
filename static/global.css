@@ -171,7 +171,9 @@ i.right {
   .print {
     display: inline;
   }
-
+  .noprint {
+    display: none;
+  }
   a {
     display: none;
   }

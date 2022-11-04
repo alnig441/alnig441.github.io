@@ -13,6 +13,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@iconify/svelte": "^3.0.0",
 		"@playwright/test": "1.25.0",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
@@ -28,7 +29,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@iconify/svelte": "^3.0.0",
+		"socket.io-client": "^4.5.3",
+		"svelte-demo-chat-client": "^0.0.4",
 		"svelte-demo-floating-menu": "^0.0.7"
 	}
 }
