@@ -14,7 +14,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: dev ? '' : '/build',
+			base: dev ? '' : '/alnig441.github.io/build',
 		},
 		trailingSlash: 'always'
 	}
