@@ -11,7 +11,7 @@ const config = {
 			assets: 'docs',
 		}),
 		paths: {
-			base: dev ? '' : '/alnig441.github.io',
+			base: dev ? '' : '',
 		},
 		appDir: 'essentials',
 		// trailingSlash: 'always'
