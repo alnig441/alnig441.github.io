@@ -3,7 +3,12 @@
   import { ChatClient } from "svelte-demo-chat-client";
   import Icon from '@iconify/svelte';
 
-  const options = { github: {}, heroku: {}, }, endpoint = "http://localhost:3000", auth = "";
+  const { MODE, VITE_ENDPOINT_DEV, VITE_ENDPOINT_PROD } = import.meta.env;
+  const options = { github: {}, heroku: {}, },
+        endpoint = (MODE === 'development') ? VITE_ENDPOINT_DEV : VITE_ENDPOINT_PROD,
+        auth = "";
+
+  console.log('mode: ', MODE);
 
 </script>
 
