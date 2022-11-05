@@ -6,18 +6,17 @@ const dev = process.argv.includes('dev');
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter(),
-		// adapter: adapter({
-		// 	pages: 'build',
-		// 	assets: 'build',
-		// 	fallback: null,
-		// 	precompress: false,
-		// 	strict: true
-		// }),
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: null,
+			precompress: false,
+			strict: true
+		}),
 		paths: {
-			base: dev ? '' : '/alnig441.github.io',
+			base: dev ? '' : '',
 		},
-		// appDir: 'internal'
+		trailingSlash: 'always'
 	}
 };
 
