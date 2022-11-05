@@ -9,9 +9,9 @@ const config = {
 		adapter: adapter({
 			pages: 'docs',
 			assets: 'docs',
-			fallback: null,
-			precompress: false,
-			strict: true
+			// fallback: null,
+			// precompress: false,
+			// strict: true
 		}),
 		paths: {
 			base: dev ? '' : '/alnig441.github.io',
