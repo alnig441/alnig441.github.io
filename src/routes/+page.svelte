@@ -27,29 +27,30 @@
           Charlotte, NC
         </p>
         <p class="left">
-          <!-- <a class="detail" href="sms:+12148430032">
-            214 843 0032
-          </a> -->
           <span class="print">
+            <Icon icon="bi:phone-vibrate" inline={true} />
             214 843 0032
           </span>
         </p>
         <p class="left">
-          <a class="detail" href="mailto:alnig441@gmail.com">
+          <a class="detail" href="mailto:s0t8ug@m.hackerx.org">
             <Icon icon="ci:mail" inline={true}/>
-            <!-- alnig441@gmail.com -->
-            s0t8ug@m.hackerx.org
+            <!-- s0t8ug@m.hackerx.org -->
+            Send me an email!
           </a>
           <span class="print">
+            <Icon icon="ci:mail" inline={true}/>
             alnig441@gmail.com
           </span>
         </p>
         <p class="left">
           <a class="detail" href="https://cleland-nielsen.net">
-            <Icon icon="el:website" inline={true} />
-            cleland-nielsen.net
+            <Icon icon="gg:website" inline={true} />
+            <!-- cleland-nielsen.net -->
+            Go to my website!
           </a>
           <span class="print">
+            <Icon icon="gg:website" inline={true} />
             cleland-nielsen.net
           </span>
         </p>
@@ -60,13 +61,19 @@
           <a class="resource" href="https://linkedin.com/in/nielsenallan" >
             <Icon icon="logos:linkedin" inline={true} />
           </a>
-          <span class="print">linkedin.com/in/nielsenallan</span>
+          <span class="print"><Icon icon="bxl:linkedin-square" inline={true} />linkedin.com/in/nielsenallan</span>
         </p>
         <p class="right" id="github">
           <a class="resource" href="https://github.com/alnig441" >
           <Icon icon="octicon:logo-github-16" inline={true} />
           </a>
-          <span class="print">github.com/alnig441</span>
+          <span class="print"><Icon icon="bxl:github" inline={true} />github.com/alnig441</span>
+        </p>
+        <p class="right" id="npm">
+          <a class="resource" href="https://www.npmjs.com/search?q=codesoup" >
+            <Icon icon="logos:npm" inline={true} />
+          </a>
+          <span class="print"><Icon icon="eva:npm-outline" inline={true} />npmjs.com/search?q=codesoup</span>
         </p>
       </div>
     </div>
@@ -78,17 +85,17 @@
       <p class="right" id="scrambler">
         <a class="github menu-item" href="https://github.com/alnig441/word-guessing-game" >Word Scrambler<Icon icon="ci:external-link" inline={true} /></a>
         <a class="heroku menu-item" href="https://allan-nielsen-word-scrambler.herokuapp.com" >Word Scrambler<Icon icon="ci:external-link" inline={true} /></a>
-        <span class="print">https://allan-nielsen-word-scrambler.herokuapp.com</span>
+        <span class="print"><Icon icon="bxl:heroku" inline={true} />https://allan-nielsen-word-scrambler.herokuapp.com</span>
       </p>
       <p class="right" id="profiles">
         <a class="github menu-item" href="https://github.com/alnig441/student-profiles-react" >Student Profiles<Icon icon="ci:external-link" inline={true} /></a>
         <a class="heroku menu-item" href="https://allan-nielsen-student-profiles.herokuapp.com" >Student Profiles<Icon icon="ci:external-link" inline={true} /></a>
-        <span class="print">https://allan-nielsen-student-profiles.herokuapp.com</span>
+        <span class="print"><Icon icon="bxl:heroku" inline={true} />https://allan-nielsen-student-profiles.herokuapp.com</span>
       </p>
       <p class="right" id="chat">
         <a class="github menu-item" href="https://github.com/alnig441/svelte-chat-app" >Chat App<Icon icon="ci:external-link" inline={true} /></a>
         <a class="heroku menu-item" href="https://allan-nielsen-chat-app.herokuapp.com/" >Chat App<Icon icon="ci:external-link" inline={true} /></a>
-        <span class="print">https://allan-nielsen-chat-app.herokuapp.com/</span>
+        <span class="print"><Icon icon="bxl:heroku" inline={true} />https://allan-nielsen-chat-app.herokuapp.com/</span>
       </p>
     </div>
 <!-- sidebar end -->
