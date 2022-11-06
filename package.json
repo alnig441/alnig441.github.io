@@ -32,6 +32,6 @@
 	"dependencies": {
 		"socket.io-client": "^4.5.3",
 		"svelte-demo-chat-client": "^0.0.4",
-		"svelte-demo-floating-menu": "^0.0.7"
+		"svelte-demo-floating-menu": "^0.0.9"
 	}
 }
