@@ -30,8 +30,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"socket.io-client": "^4.5.3",
-		"svelte-demo-chat-client": "^0.0.4",
-		"svelte-demo-floating-menu": "^0.0.9"
+		"@codesoup/chat-client": "^0.0.4",
+		"@codesoup/floating-menu": "^0.0.9",
+		"socket.io-client": "^4.5.3"
 	}
 }

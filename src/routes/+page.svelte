@@ -1,6 +1,6 @@
 <script>
-  import { FloatingMenu } from "svelte-demo-floating-menu";
-  import { ChatClient } from "svelte-demo-chat-client";
+  import { FloatingMenu } from "@codesoup/floating-menu";
+  import { ChatClient } from "@codesoup/chat-client";
   import Icon from '@iconify/svelte';
 
   const { MODE, VITE_ENDPOINT_DEV, VITE_ENDPOINT_PROD } = import.meta.env;
