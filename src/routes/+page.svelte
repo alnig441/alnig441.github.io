@@ -4,7 +4,7 @@
   import Icon from '@iconify/svelte';
 
   const { MODE, VITE_ENDPOINT_DEV, VITE_ENDPOINT_PROD } = import.meta.env;
-  const options = { github: {}, heroku: {}, },
+  const options = { github: {}, heroku: { handheld: false }, },
         endpoint = (MODE === 'development') ? VITE_ENDPOINT_DEV : VITE_ENDPOINT_PROD,
         auth = "";
 
@@ -35,7 +35,6 @@
         <p class="left">
           <a class="detail" href="mailto:s0t8ug@m.hackerx.org">
             <Icon icon="ci:mail" inline={true}/>
-            <!-- s0t8ug@m.hackerx.org -->
             Send me an email!
           </a>
           <span class="print">
@@ -46,7 +45,6 @@
         <p class="left">
           <a class="detail" href="https://cleland-nielsen.net">
             <Icon icon="gg:website" inline={true} />
-            <!-- cleland-nielsen.net -->
             Go to my website!
           </a>
           <span class="print">
