@@ -86,10 +86,6 @@ i.right {
     margin-right: 25px;
   }
 
-  .heroku.menu-item {
-    display: none;
-  }
-
   .github.menu-item {
     display: inline;
   }
@@ -130,10 +126,6 @@ i.right {
   }
 
   i.left {
-    display: none;
-  }
-
-  .heroku.menu-item {
     display: none;
   }
 
