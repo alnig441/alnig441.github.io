@@ -17,8 +17,87 @@
   <span class="noprint"><ChatClient auth={auth} endpoint={endpoint} /></span>
 <!-- grid start -->
   <div class="grid-container outer-container">
-<!-- sidebar begin -->
-<!-- flex container begin -->
+<!-- sidebar for larger devices begin -->
+    <span id="full-view-row2">
+      <div class="item col0 sidebar" id="details">
+        <h3>Details</h3>
+        <p class="left">
+          <Icon icon="fa6-solid:tree-city" inline={true}/>
+          Charlotte, NC
+        </p>
+        <p class="left">
+          <span class="print">
+            <Icon icon="bi:phone-vibrate" inline={true} />
+            214 843 0032
+          </span>
+        </p>
+        <p class="left">
+          <a class="detail" href="mailto:s0t8ug@m.hackerx.org">
+            <Icon icon="ci:mail" inline={true}/>
+            Send me an email!
+          </a>
+          <span class="print">
+            <Icon icon="ci:mail" inline={true}/>
+            alnig441@gmail.com
+          </span>
+        </p>
+        <p class="left">
+          <a class="detail" href="https://cleland-nielsen.net">
+            <Icon icon="gg:website" inline={true} />
+            Go to my website!
+          </a>
+          <span class="print">
+            <Icon icon="gg:website" inline={true} />
+            cleland-nielsen.net
+          </span>
+        </p>
+      </div>
+    </span>
+    <span id="full-view-row4">
+      <div class="item col0 sidebar" id="resources">
+        <h3>Resources</h3>
+        <p class="right" id="linkedin">
+          <a class="resource" href="https://linkedin.com/in/nielsenallan" >
+            <Icon icon="logos:linkedin" inline={true} />
+          </a>
+          <span class="print"><Icon icon="bxl:linkedin-square" inline={true} />linkedin.com/in/nielsenallan</span>
+        </p>
+        <p class="right" id="github">
+          <a class="resource" href="https://github.com/alnig441" >
+          <Icon icon="octicon:logo-github-16" inline={true} />
+          </a>
+          <span class="print"><Icon icon="bxl:github" inline={true} />github.com/alnig441</span>
+        </p>
+        <p class="right" id="npm">
+          <a class="resource" href="https://www.npmjs.com/search?q=codesoup" >
+            <Icon icon="logos:npm" inline={true} />
+          </a>
+          <span class="print"><Icon icon="eva:npm-outline" inline={true} />npmjs.com/search?q=codesoup</span>
+        </p>
+      </div>
+      <div class="item col0 sidebar" id="skills">
+        <h3>Skills</h3>
+        <p>HTML5, CSS3, JavaScript, TypeScript, Node, Express, Bootstrap, Angular, AngularJS, Svelte, SvelteKit, jQuery, React, Mongo, Postgres, mySql, Docker, Craft CMS, PHP, Bitbucket, Git, Heroku, NPM, Homebrew</p>
+      </div>
+      <div class="item col0 sidebar" id="apps">
+        <h3>Apps</h3>
+        <p class="right" id="scrambler">
+          <a class="heroku menu-item" href="https://allan-nielsen-word-scrambler.herokuapp.com" >Word Scrambler<Icon icon="ci:external-link" inline={true} /></a>
+          <span class="print"><Icon icon="bxl:heroku" inline={true} />https://allan-nielsen-word-scrambler.herokuapp.com</span>
+        </p>
+        <p class="right" id="profiles">
+          <a class="heroku menu-item" href="https://allan-nielsen-student-profiles.herokuapp.com" >Student Profiles<Icon icon="ci:external-link" inline={true} /></a>
+          <span class="print"><Icon icon="bxl:heroku" inline={true} />https://allan-nielsen-student-profiles.herokuapp.com</span>
+        </p>
+        <p class="right" id="chat">
+          <a class="heroku menu-item" href="https://allan-nielsen-chat-app.herokuapp.com/" >Chat App<Icon icon="ci:external-link" inline={true} /></a>
+          <span class="print"><Icon icon="bxl:heroku" inline={true} />https://allan-nielsen-chat-app.herokuapp.com/</span>
+        </p>
+      </div>
+    </span>
+<!-- sidebar for larger devices end -->
+<!-- sidebar for smaller/handheld devices begin -->
+<!-- flex container to maintain flow/stacking for reponsive begin -->
     <div class="flex-container">
       <div class="item col1 sidebar" id="details">
         <h3>Details</h3>
@@ -75,28 +154,25 @@
         </p>
       </div>
     </div>
-<!-- flex contatiner end -->
+    <!-- flex container to maintain flow/stacking for reponsive end -->
     <div class="item col1 sidebar" id="skills">
       <h3>Skills</h3>
       <p>HTML5, CSS3, JavaScript, TypeScript, Node, Express, Bootstrap, Angular, AngularJS, Svelte, SvelteKit, jQuery, React, Mongo, Postgres, mySql, Docker, Craft CMS, PHP, Bitbucket, Git, Heroku, NPM, Homebrew</p>
       <h3>Apps</h3>
       <p class="right" id="scrambler">
         <a class="github menu-item" href="https://github.com/alnig441/word-guessing-game" >Word Scrambler<Icon icon="ci:external-link" inline={true} /></a>
-        <a class="heroku menu-item" href="https://allan-nielsen-word-scrambler.herokuapp.com" >Word Scrambler<Icon icon="ci:external-link" inline={true} /></a>
         <span class="print"><Icon icon="bxl:heroku" inline={true} />https://allan-nielsen-word-scrambler.herokuapp.com</span>
       </p>
       <p class="right" id="profiles">
         <a class="github menu-item" href="https://github.com/alnig441/student-profiles-react" >Student Profiles<Icon icon="ci:external-link" inline={true} /></a>
-        <a class="heroku menu-item" href="https://allan-nielsen-student-profiles.herokuapp.com" >Student Profiles<Icon icon="ci:external-link" inline={true} /></a>
         <span class="print"><Icon icon="bxl:heroku" inline={true} />https://allan-nielsen-student-profiles.herokuapp.com</span>
       </p>
       <p class="right" id="chat">
         <a class="github menu-item" href="https://github.com/alnig441/svelte-chat-app" >Chat App<Icon icon="ci:external-link" inline={true} /></a>
-        <a class="heroku menu-item" href="https://allan-nielsen-chat-app.herokuapp.com/" >Chat App<Icon icon="ci:external-link" inline={true} /></a>
         <span class="print"><Icon icon="bxl:heroku" inline={true} />https://allan-nielsen-chat-app.herokuapp.com/</span>
       </p>
     </div>
-<!-- sidebar end -->
+<!-- sidebar for smaller/handheld devices end -->
 <!-- main column begin -->
     <div class="item col2">
       <h1>Allan Nielsen</h1>
@@ -119,7 +195,6 @@
         <li>General maintenance, bug fixing, and quality assurance</li>
       </ul>
       <h3>Maker Space Booking Application</h3>
-      <!-- <p>Student @ Prime Digital Academy</p> -->
       <ul>
         <li>Student @ Prime Digital Academy, collaboratively developed a AngularJS based <span class="print">booking application</span><a class="github" href="https://github.com/alnig441/nordeastmakers" >booking application</a> for a DIY maker space</li>
       </ul>
@@ -177,4 +252,42 @@
     </div>
 <!-- main  columns end -->
   </div>
+<!-- grid end -->
 </main>
+
+<style>
+  @media screen and (min-width: 701px) {
+    #full-view-row2 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    #full-view-row4 {
+      grid-column: 1;
+      grid-row: 4;
+    }
+    .col1 {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    #full-view-row2, #full-view-row4 {
+      display: none;
+    }
+  }
+
+  @media print {
+    #full-view-row2 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    #full-view-row4 {
+      grid-column: 1;
+      grid-row: 4;
+    }
+    .col1 {
+      display: none;
+    }
+  }
+
+</style>
