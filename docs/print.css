@@ -17,16 +17,4 @@
     margin: 0px;
     padding: none;
   }
-
-  #desktop-view-row2 {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  #desktop-view-row3 {
-    grid-column: 1;
-    grid-row: 3;
-  }
-  .col1 {
-    display: none;
-  }
 }
