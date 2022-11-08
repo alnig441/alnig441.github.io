@@ -89,15 +89,15 @@
         <h3>Apps</h3>
         <p class="right" id="scrambler">
           <a class="heroku menu-item noprint" href="https://allan-nielsen-word-scrambler.herokuapp.com" >Word Scrambler<Icon icon="ci:external-link" inline={true} /></a>
-          <span class="print"><Icon icon="bxl:heroku" inline={true} />https://allan-nielsen-word-scrambler.herokuapp.com</span>
+          <span class="print"><Icon icon="bxl:heroku" inline={true} /> https://allan-nielsen-word-scrambler.herokuapp.com</span>
         </p>
         <p class="right" id="profiles">
           <a class="heroku menu-item noprint" href="https://allan-nielsen-student-profiles.herokuapp.com" >Student Profiles<Icon icon="ci:external-link" inline={true} /></a>
-          <span class="print"><Icon icon="bxl:heroku" inline={true} />https://allan-nielsen-student-profiles.herokuapp.com</span>
+          <span class="print"><Icon icon="bxl:heroku" inline={true} /> https://allan-nielsen-student-profiles.herokuapp.com</span>
         </p>
         <p class="right" id="chat">
           <a class="heroku menu-item noprint" href="https://allan-nielsen-chat-app.herokuapp.com/" >Chat App<Icon icon="ci:external-link" inline={true} /></a>
-          <span class="print"><Icon icon="bxl:heroku" inline={true} />https://allan-nielsen-chat-app.herokuapp.com/</span>
+          <span class="print"><Icon icon="bxl:heroku" inline={true} /> https://allan-nielsen-chat-app.herokuapp.com/</span>
         </p>
       </div>
     </span>
@@ -175,7 +175,7 @@
 
 
     <div class="item col2 section-header" id="dev-exp">
-      <h2>DEVELOPMENT EXPERIENCE: 2016 -</h2>
+      <h2>Development Experience: 2016 -</h2>
       <div class="item col2 experience" id="dev-exp-1">
         <h3>End-to-end Client Support</h3>
         <p>Independent contractor @ RawaySmith, responsible for providing end-to-end support for YMCA's corporate site</p>
@@ -212,7 +212,7 @@
 
 
     <div class="item col2 section-header" id="prior-exp">
-      <h2>PRIOR EXPERIENCE: 1999 - 2015</h2>
+      <h2>Prior Experience: 1999 - 2015</h2>
       <div class="item col2 experience" id="prior-exp-1">
         <h3>Client Account & Project Management</h3>
         <ul>
@@ -235,7 +235,7 @@
         </ul>
       </div>
       <div class="item col2 section-header" id="education">
-        <h2>EDUCATION</h2>
+        <h2>Education</h2>
       </div>
       <div class="item col2 education" id="edu-1">
         <h3>Prime Digital Academy, MEAN Stack Web Development Bootcamp</h3>
@@ -256,12 +256,10 @@
   .grid-container {
     grid-template-areas:
       'header header'
-      'sidebar section'
-      'sidebar section'
-      'sidebar section'
-      'sidebar section'
-      'sidebar section'
-      'sidebar section'
+      'details objective'
+      'skills dev-exp'
+      'sidebar prior-experience'
+      'sidebar education'
       ;
   }
 
@@ -271,16 +269,26 @@
   }
 
   #desktop-view-row2 {
-    grid-column: 1;
-    grid-row: 2;
+    grid-area: details;
   }
   #desktop-view-row3 {
-    grid-column: 1;
-    grid-row: 3;
+    grid-area: skills;
   }
 
   #skills-desktop p {
     margin-top: 0px;
+  }
+
+  #objective {
+    grid-area: objective;
+  }
+
+  #dev-exp {
+    grid-area: dev-exp;
+  }
+
+  #education {
+    grid-area: education;
   }
 
   .col1 {
@@ -291,46 +299,58 @@
     margin-bottom: 5px;
   }
 
+  .item {
+    padding: 0px 5px 0px 5px;
+    text-align: left;
+  }
+
+  .section-header > h2 {
+    margin: 5px 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .left, .right {
+    margin: 0 2px 2px 0;
+    padding: none;
+  }
+
   @media screen and (max-width: 700px) {
-    body {
-      margin: 0;
-      width: 100%;
-    }
-
-    main {
-      /* margin-right: 20px; */
-    }
-
     .grid-container {
       grid-template-areas:
       'header'
-      'section'
-      'section'
-      'section'
-      'section'
+      'objective'
+      'handheld-view-1'
+      'dev-exp'
+      'handheld-view-2'
+      'prior-exp'
+      'education'
     }
 
-    .col1 {
-      grid-area: section;
-      grid-row: 1;
+    .col1.sidebar {
       display: initial;
     }
 
-    #header {
-      grid-column: 1;
-      text-align: center;
-    }
-
-    #objective {
-      grid-row: 2;
-    }
-
-    #desktop-view-row2, #desktop-view-row3 {
+    .col0.sidebar {
       display: none;
     }
 
+    #header {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+      grid-column: 1;
+      text-align: center;
+      background-color: white;
+      opacity: 0.9;
+    }
+
+    #objective {
+      grid-area: objective;
+    }
+
     #handheld-view-row3 {
-      grid-row: 3;
+      grid-area: handheld-view-1;
     }
 
     #details-handheld, #resources-handheld {
@@ -344,12 +364,12 @@
     }
 
     #dev-exp {
-      grid-row: 4;
+      grid-area: dev-exp;
     }
 
     #handheld-view-row5 {
+      grid-area: handheld-view-2;
       padding: 0 10px;
-      grid-row: 5;
     }
 
     #handheld-view-row5 h3 {
@@ -361,7 +381,11 @@
     }
 
     #prior-exp {
-      grid-row: 6;
+      grid-area: prior-exp;
+    }
+
+    #education {
+      grid-area: education;
     }
   }
 

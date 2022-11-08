@@ -5,9 +5,4 @@
   .grid-container {
     grid-template-columns: 100%;
   }
-
-  .col2, #objective, #dev-exp {
-    grid-column: 1;
-  }
-
 }
