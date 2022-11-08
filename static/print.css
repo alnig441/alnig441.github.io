@@ -1,0 +1,32 @@
+@media print {
+  body {
+    width: 700px;
+    font-size: 0.7em;
+  }
+
+  .print {
+    display: inline;
+  }
+
+  .noprint {
+    display: none;
+  }
+
+  .print.detail {
+    display: block;
+    margin: 0px;
+    padding: none;
+  }
+
+  #desktop-view-row2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #desktop-view-row3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .col1 {
+    display: none;
+  }
+}
