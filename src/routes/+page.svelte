@@ -4,7 +4,7 @@
   import Icon from '@iconify/svelte';
 
   const { MODE, VITE_ENDPOINT_DEV, VITE_ENDPOINT_PROD } = import.meta.env;
-  const options = { github: {}, heroku: { handheld: false }, },
+  const options = { portfolio: { icon: "zondicons:portfolio" }, heroku: { handheld: false }, },
         endpoint = (MODE === 'development') ? VITE_ENDPOINT_DEV : VITE_ENDPOINT_PROD,
         auth = "";
 
@@ -60,22 +60,16 @@
     </span>
 
     <span id="desktop-view-row3" class="desktop-view">
-      <div class="item col0 sidebar" id="resources-desktop">
-        <h3>Resources</h3>
-        <p class="right" id="webpage">
-          <a class="resource noprint" href="https://cleland-nielsen.net">
-            <strong>MyWebPage</strong>
-          </a>
-          <span class="print"><Icon icon="gg:website" inline={true} /> cleland-nielsen.net</span>
-        </p>
+      <div class="item col0 sidebar" id="portfolios-desktop">
+        <h3>Portfolios</h3>
         <p class="right" id="github">
-          <a class="resource noprint" href="https://github.com/alnig441" >
+          <a class="portfolio menu-item noprint" href="https://github.com/alnig441" title="GitHub" >
           <Icon icon="octicon:logo-github-16" inline={true} />
           </a>
           <span class="print"><Icon icon="bxl:github" inline={true} /> github.com/alnig441</span>
         </p>
         <p class="right" id="npm">
-          <a class="resource noprint" href="https://www.npmjs.com/search?q=codesoup" >
+          <a class="portfolio menu-item noprint" href="https://www.npmjs.com/search?q=codesoup" title="npm">
             <Icon icon="logos:npm" inline={true} />
           </a>
           <span class="print"><Icon icon="eva:npm-outline" inline={true} /> npmjs.com/search?q=codesoup</span>
@@ -89,15 +83,19 @@
         <h3>Apps</h3>
         <p class="right" id="scrambler">
           <a class="heroku menu-item noprint" href="https://allan-nielsen-word-scrambler.herokuapp.com" >Word Scrambler<Icon icon="ci:external-link" inline={true} /></a>
-          <span class="print"><Icon icon="bxl:heroku" inline={true} /> https://allan-nielsen-word-scrambler.herokuapp.com</span>
+          <span class="print">&bull; https://allan-nielsen-word-scrambler.herokuapp.com</span>
         </p>
         <p class="right" id="profiles">
           <a class="heroku menu-item noprint" href="https://allan-nielsen-student-profiles.herokuapp.com" >Student Profiles<Icon icon="ci:external-link" inline={true} /></a>
-          <span class="print"><Icon icon="bxl:heroku" inline={true} /> https://allan-nielsen-student-profiles.herokuapp.com</span>
+          <span class="print">&bull; https://allan-nielsen-student-profiles.herokuapp.com</span>
         </p>
         <p class="right" id="chat">
           <a class="heroku menu-item noprint" href="https://allan-nielsen-chat-app.herokuapp.com/" >Chat App<Icon icon="ci:external-link" inline={true} /></a>
-          <span class="print"><Icon icon="bxl:heroku" inline={true} /> https://allan-nielsen-chat-app.herokuapp.com/</span>
+          <span class="print">&bull; https://allan-nielsen-chat-app.herokuapp.com/</span>
+        </p>
+        <p class="right" id="webpage">
+          <a class="menu-item noprint" href="https://cleland-nielsen.net">My Web Site<Icon icon="ci:external-link" inline={true} /></a>
+          <span class="print">&bull; https://cleland-nielsen.net</span>
         </p>
       </div>
     </span>
@@ -123,21 +121,15 @@
           </a>
         </p>
       </div>
-      <div class="item col1 sidebar" id="resources-handheld">
-        <h3>Resources</h3>
-        <p class="right" id="webpage">
-          <a class="resource" href="https://cleland-nielsen.net">
-            <strong>MyWebPage</strong>
-          </a>
-          <span class="print">cleland-nielsen.net</span>
-        </p>
+      <div class="item col1 sidebar" id="portfolios-handheld">
+        <h3>Portfolios</h3>
         <p class="right" id="github">
-          <a class="resource" href="https://github.com/alnig441" >
+          <a class="portfolio" href="https://github.com/alnig441" >
           <Icon icon="octicon:logo-github-16" inline={true} />
           </a>
         </p>
         <p class="right" id="npm">
-          <a class="resource" href="https://www.npmjs.com/search?q=codesoup" >
+          <a class="portfolio" href="https://www.npmjs.com/search?q=codesoup" >
             <Icon icon="logos:npm" inline={true} />
           </a>
         </p>
@@ -159,6 +151,9 @@
         </p>
         <p class="right" id="chat">
           <a class="github menu-item" href="https://github.com/alnig441/svelte-chat-app" >Chat App<Icon icon="ci:external-link" inline={true} /></a>
+        </p>
+        <p class="right" id="webpage">
+          <a class="portfolio" href="https://cleland-nielsen.net">My Web Site<Icon icon="ci:external-link" inline={true} /></a>
         </p>
       </div>
     </span>
@@ -353,12 +348,12 @@
       grid-area: handheld-view-1;
     }
 
-    #details-handheld, #resources-handheld {
+    #details-handheld, #portfolios-handheld {
       display: inline-block;
       margin-bottom: 10px;
     }
 
-    #resources-handheld {
+    #portfolios-handheld {
       text-align: right;
       float: right;
     }
