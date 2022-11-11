@@ -1,12 +1,14 @@
 <script>
   import { FloatingMenu } from "@codesoup/floating-menu";
   import { ChatClient } from "@codesoup/chat-client";
+  import { ScrollButton } from "@codesoup/scroll-to-top";
   import Icon from '@iconify/svelte';
 
   const { MODE, VITE_ENDPOINT_DEV, VITE_ENDPOINT_PROD } = import.meta.env;
   const options = { portfolio: { icon: "zondicons:portfolio" }, heroku: { handheld: false }, },
         endpoint = (MODE === 'development') ? VITE_ENDPOINT_DEV : VITE_ENDPOINT_PROD,
         auth = "";
+  const icon = "fluent-emoji-flat:top-arrow";
 
   console.log('mode: ', MODE);
 
@@ -15,6 +17,7 @@
 <main id="main">
   <span class="noprint"><FloatingMenu options={options} /></span>
   <span class="noprint"><ChatClient auth={auth} endpoint={endpoint} /></span>
+  <span class="noprint"><ScrollButton icon={icon} /></span>
 <!-- grid start -->
   <div class="grid-container outer-container">
 <!-- sidebar for larger devices begin -->
