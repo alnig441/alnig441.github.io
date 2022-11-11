@@ -5,19 +5,17 @@
   import Icon from '@iconify/svelte';
 
   const { MODE, VITE_ENDPOINT_DEV, VITE_ENDPOINT_PROD } = import.meta.env;
-  const options = { portfolio: { icon: "zondicons:portfolio" }, heroku: { handheld: false }, },
+  const menu = { portfolio: { icon: "zondicons:portfolio" }, heroku: { handheld: false }, },
         endpoint = (MODE === 'development') ? VITE_ENDPOINT_DEV : VITE_ENDPOINT_PROD,
         auth = "";
-  const icon = "fluent-emoji-flat:top-arrow";
-
-  console.log('mode: ', MODE);
+  const scroll = { device: 'handheld', icon: "fluent-emoji-flat:top-arrow" };
 
 </script>
 
 <main id="main">
-  <span class="noprint"><FloatingMenu options={options} /></span>
+  <span class="noprint"><FloatingMenu options={menu} /></span>
   <span class="noprint"><ChatClient auth={auth} endpoint={endpoint} /></span>
-  <span class="noprint"><ScrollButton icon={icon} /></span>
+  <span class="noprint"><ScrollButton options={scroll} /></span>
 <!-- grid start -->
   <div class="grid-container outer-container">
 <!-- sidebar for larger devices begin -->
